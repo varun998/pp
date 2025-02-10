@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "kernelspec": {
+      "name": "python",
+      "display_name": "Python (Pyodide)",
+      "language": "python"
+    },
+    "language_info": {
+      "codemirror_mode": {
+        "name": "python",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.8"
+    }
+  },
+  "nbformat_minor": 5,
+  "nbformat": 4,
+  "cells": [
+    {
+      "id": "bd0856bc-fc09-4950-9cf5-2ed114ff1a4d",
+      "cell_type": "code",
+      "source": "class Employee:\n    def __init__ (\n            self,                                                      \n            designation: str = 'Developer',\n            frontend: bool = True,\n            backend: bool = True\n    ):\n        self.designation = designation\n        self.frontend = frontend\n        self.backend = backend\n\n    def __repr__ (self):\n        return '{} (Frontend: {}, Backend: {})'.format(self.designation, self.frontend, self.backend)\n    \n    def verifier(self):\n   \n        \n        # Verifying frontend and backend\n        if self.frontend and self.backend:\n            print(\"Employee is skilled fullstack developer.\")\n        elif self.frontend:\n            print(\"Employee is skilled in frontend.\")\n        elif self.backend:\n            print(\"Employee is skilled in backend.\")\n        else:\n            print(\"Employee is not skilled in any of the field.\")\n\nif __name__ == '__main__':\n    firstEmployee = Employee()\n    # Call the method to display output\n    firstEmployee.verifier()",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Employee is skilled fullstack developer.\n"
+        }
+      ],
+      "execution_count": 1
+    },
+    {
+      "id": "5dde3950-624c-4af8-8475-8ec74c5dd2f2",
+      "cell_type": "code",
+      "source": "",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": null
+    }
+  ]
+}
